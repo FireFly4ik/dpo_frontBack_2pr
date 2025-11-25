@@ -151,6 +151,27 @@ ul {
     flex-direction: column;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+}
+
+
 /* ---- header ---- */
 header {
     display:flex;
@@ -422,19 +443,16 @@ section {
 
 /* -------- swiper -------- */
 .swiper {
-    display: flex;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
     padding : 2rem 0;
-    flex-direction: row;
-    overflow-x: hidden;
     z-index: 1;
 }
 
 .swiper-slide {
-    position: relative;
     display: flex;
     flex-direction: column;
-    margin-right: 3rem;
     .swiper-card:first-child{
         margin-bottom: 3rem;
     }
@@ -446,7 +464,7 @@ section {
 
 .swiper-card {
     display: flex;
-    width: 500px;
+    width: 100%;
     height: 256px;
 }
 
