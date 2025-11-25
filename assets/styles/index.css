@@ -207,7 +207,7 @@ header {
 .header-hero{
     width: 65%;
     min-height: 45rem;
-    background-image: url("../png/Баннер.png");
+    background-image: url("../img/Баннер.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
