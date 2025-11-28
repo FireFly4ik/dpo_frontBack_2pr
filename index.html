@@ -8,236 +8,282 @@
 </head>
 <body>
     <a href="#main" class="skip-link">Перейти к основному содержимому</a>
-    <header class="header" aria-label="Главная шапка сайта">
-        <aside class="header-left">
-            <div class="header-logo" aria-hidden="true">
+        <header class="main-header">
+            <div class="header-logo">
                 <a href="#" aria-label="Логотип Revo Coffee">
-                    <img src="assets/img/revo_logo.png" alt="Логотип Revo Coffee">
+                    <img src="assets/img/revo_logo.png" alt="Лogo Revo Coffee">
                 </a>
             </div>
-
-            <h1 class="header-title">ВАШ <br><span>ПЕРСОНАЛЬНЫЙ</span> <br>КОФЕ</h1>
-        </aside>
-
-        <div class="header-hero" role="img" aria-label="Фоновая фотография кофе"></div>
-
-        <aside class="header-right" aria-label="Навигация и корзина">
+            <nav aria-label="Главное меню" class="main-nav">
+                <ul>
+                    <li><a href="#" aria-current="page">Главная</a></li>
+                    <li><a href="#">Кофе</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Подарочные наборы</a></li>
+                    <li><a href="#">Комбо наборы</a></li>
+                </ul>
+            </nav>
             <a aria-label="Корзина товаров" class="basket" href="">
                 <img src="assets/icons/shopping-cart-3.png" alt="Иконка корзины" class="basket-main">
                 <span aria-hidden="true" class="basket-products">2</span>
             </a>
-
-            <nav aria-label="Главное меню">
-                <ul class="list-vertical">
-                    <li class="navigation-list-main"><a href="#">Главная</a></li>
-                    <li class="navigation-list"><a href="#">Кофе</a></li>
-                    <li class="navigation-list"><a href="#">Каталог</a></li>
-                    <li class="navigation-list"><a href="#">Подарочные наборы</a></li>
-                    <li class="navigation-list"><a href="#">Комбо наборы</a></li>
-                </ul>
-            </nav>
-        </aside>
-    </header>
-    <main id="main">
-        <section class="container">
-            <h3 class="small-header">Ваш персональный кофе</h3>
-            <h2 class="big-header">КОФЕ ВЛИЯЕТ НА ВАШУ ЖИЗНЬ</h2>
-            <ul>
-                <li class="features-item">
-                    <img src="assets/icons/ic.png" alt="Иконка кофейни" class="features-icon">
-                    <h3 class="features-name">Источник</h3>
-                    <p class="features-description">Кофейные зерна арабики и робусты соответствуют международным стандартам качества.</p>
-                </li>
-                <li class="features-item">
-                    <img src="assets/icons/IC%20(1).png" alt="Иконка вывески" class="features-icon">
-                    <h3 class="features-name">Качество</h3>
-                    <p class="features-description">Каждое кофейное зерно — это процесс высокой концентрации усилий кофейных мастеров.</p>
-                </li>
-                <li class="features-item">
-                    <img src="assets/icons/IC%20(2).png" alt="Иконка зёрен" class="features-icon">
-                    <h3 class="features-name">Зёрна</h3>
-                    <p class="features-description">Качество чашки кофе на 70% зависит от происхождения и качества зеленых зерен.</p>
-                </li>
-                <li class="features-item">
-                    <img src="assets/icons/IC%20(3).png" alt="Иконка кофемашины" class="features-icon">
-                    <h3 class="features-name">Обжарка</h3>
-                    <p class="features-description">Кофейные зерна подвергаются тщательной и тщательной обжарке.</p>
-                </li>
-            </ul>
-        </section>
-        <section class="catalog container">
-            <h3 class="small-header">Выбери свой любимый</h3>
-            <h2 class="big-header">ПРАВИЛЬНЫЙ ВКУС</h2>
-            <div class="swiper">
-                <div class="swiper-slide">
-                    <article class="swiper-card">
-                        <img src="assets/img/IMAGE.png" alt="Кофе REVO Morning">
-                        <div class="catalog-card-info">
-                            <div class="catalog-card-price">99.00</div>
-                            <h3 class="catalog-card-name">REVO Morning</h3>
-                            <p class="catalog-card-description">горький, сладковатый привкус, цветочный аромат</p>
-                            <button class="catalog-card-buy-button">КУПИТЬ</button>
-                        </div>
-                    </article>
-                    <article class="swiper-card">
-                        <img src="assets/img/IMAGE.png" alt="Кофе REVO Morning">
-                        <div class="catalog-card-info">
-                            <div class="catalog-card-price">99.00</div>
-                            <h3 class="catalog-card-name">REVO Morning</h3>
-                            <p class="catalog-card-description">горький, сладковатый привкус, цветочный аромат</p>
-                            <button class="catalog-card-buy-button">КУПИТЬ</button>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide">
-                    <article class="swiper-card">
-                        <img src="assets/img/IMAGE.png" alt="Кофе REVO Morning">
-                        <div class="catalog-card-info">
-                            <div class="catalog-card-price">99.00</div>
-                            <h3 class="catalog-card-name">REVO Morning</h3>
-                            <p class="catalog-card-description">горький, сладковатый привкус, цветочный аромат</p>
-                            <button class="catalog-card-buy-button">КУПИТЬ</button>
-                        </div>
-                    </article>
-                    <article class="swiper-card">
-                        <img src="assets/img/IMAGE.png" alt="Кофе REVO Morning">
-                        <div class="catalog-card-info">
-                            <div class="catalog-card-price">99.00</div>
-                            <h3 class="catalog-card-name">REVO Morning</h3>
-                            <p class="catalog-card-description">горький, сладковатый привкус, цветочный аромат</p>
-                            <button class="catalog-card-buy-button">КУПИТЬ</button>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-slide not-active">
-                    <article class="swiper-card">
-                        <img src="assets/img/IMAGE.png" alt="Кофе REVO Morning">
-                        <div class="catalog-card-info">
-                            <div class="catalog-card-price">99.00</div>
-                            <h3 class="catalog-card-name">REVO Morning</h3>
-                            <p class="catalog-card-description">горький, сладковатый привкус, цветочный аромат</p>
-                            <button class="catalog-card-buy-button">КУПИТЬ</button>
-                        </div>
-                    </article>
-                    <article class="swiper-card">
-                        <img src="assets/img/IMAGE.png" alt="Кофе REVO Morning">
-                        <div class="catalog-card-info">
-                            <div class="catalog-card-price">99.00</div>
-                            <h3 class="catalog-card-name">REVO Morning</h3>
-                            <p class="catalog-card-description">горький, сладковатый привкус, цветочный аромат</p>
-                            <button class="catalog-card-buy-button">КУПИТЬ</button>
-                        </div>
-                    </article>
-                </div>
+        </header>
+        <section class="hero" aria-label="Главная промо-секция">
+            <aside class="hero-left">
+                <h1 class="hero-title">ВАШ <br><span>ПЕРСОНАЛЬНЫЙ</span> <br>КОФЕ</h1>
+            </aside>
+            <div class="hero-image" aria-label="Фоновая фотография кофе">
+                <picture>
+                    <source srcset="assets/img/Баннер.png 1200w" media="(min-width: 769px)" sizes="100vw">
+                    <source srcset="assets/img/Баннер.png 768w" media="(max-width: 768px)" sizes="100vw">
+                    <img src="assets/img/Баннер.png" 
+                         srcset="assets/img/Баннер.png 1920w,
+                                 assets/img/Баннер.png 1200w,
+                                 assets/img/Баннер.png 768w"
+                         sizes="(max-width: 1200px) 100vw, 1200px"
+                         alt="Чашка кофе на размытом фоне"
+                         fetchpriority="high">
+                </picture>
             </div>
-            <div class="swiper-buttons">
-                <div class="swiper-button"><svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.1613 0.255668C15.8344 -0.0852227 15.2902 -0.0852227 14.9518 0.255668C14.6248 0.585042 14.6248 1.13323 14.9518 1.46184L21.0848 7.6401H0.846745C0.374976 7.64086 0 8.01861 0 8.49386C0 8.96911 0.374976 9.35914 0.846745 9.35914H21.0848L14.9518 15.5259C14.6248 15.8668 14.6248 16.4157 14.9518 16.7443C15.2902 17.0852 15.8351 17.0852 16.1613 16.7443L23.7462 9.10347C24.0846 8.77409 24.0846 8.22591 23.7462 7.8973L16.1613 0.255668Z" fill="#F9FBFF" />
-                </svg></div>
-                <div class="swiper-button"><svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.1613 0.255668C15.8344 -0.0852227 15.2902 -0.0852227 14.9518 0.255668C14.6248 0.585042 14.6248 1.13323 14.9518 1.46184L21.0848 7.6401H0.846745C0.374976 7.64086 0 8.01861 0 8.49386C0 8.96911 0.374976 9.35914 0.846745 9.35914H21.0848L14.9518 15.5259C14.6248 15.8668 14.6248 16.4157 14.9518 16.7443C15.2902 17.0852 15.8351 17.0852 16.1613 16.7443L23.7462 9.10347C24.0846 8.77409 24.0846 8.22591 23.7462 7.8973L16.1613 0.255668Z" fill="#F9FBFF" />
-                </svg></div>
-            </div>
+            <aside class="hero-right-decorative">
+            </aside>
         </section>
-        <section class="gifset container">
-            <h3 class="small-header">Лучший подарок вашим друзьям</h3>
-            <h2 class="big-header">ПОДАРОЧНЫЕ НАБОРЫ</h2>
-            <div class="gifset-cards">
-                <article class="gifset-card">
-                    <img src="assets/img/pr-0018-r.png" alt="Подарочный набор 1" class="gifset-card-image">
-                    <div class="gifset-card-info">
-                        <div class="giftset-card-price">999.00</div>
-                        <h3 class="giftset-card-name">Подарочный набор «Вьетнамский фильтрованный кофе»</h3>
-                        <p class="giftset-card-description">Отличный подарок для ценителей кофе. Кофе Revo тщательно отобран, обжарен и помолот с использованием технологий и секретов, переданных известными мастерами, а также с любовью и страстью кофеваров, создавая безупречный кофе специально для вас.</p>
-                        <div class="gifset-card-icons">
-                            <div class="gifset-card-icon">
-                                <img src="assets/icons/IC_coffee.png" alt="Иконка кофе" class="gifset-card-icon-image">
-                                <div class="gifset-card-icon-text">
-                                    <div class="gifset-card-icon-name">Сорт</div>
-                                    <div class="gifset-card-icon-subname">Эрл Грей</div>
-                                </div>
-                            </div>
-                            <div class="gifset-card-icon">
-                                <img src="assets/icons/IC_Mountain.png" alt="Иконка горы" class="gifset-card-icon-image">
-                                <div class="gifset-card-icon-text">
-                                    <div class="gifset-card-icon-name">Высота сбора</div>
-                                    <div class="gifset-card-icon-subname">700 — 800м</div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="gifset-card-buy-button">КУПИТЬ</button>
-                    </div>
-                </article>
-                <ul class="giftset-list-tabs list-vertical">
-                    <li class="giftset-item">
-                        <button class="giftset-button active" data-path="one">
-                            1
-                        </button>
+        <main id="main">
+            <section class="container">
+                <p class="small-header">Ваш персональный кофе</p>
+                <h2 class="big-header">КОФЕ ВЛИЯЕТ НА ВАШУ ЖИЗНЬ</h2>
+                <ul>
+                    <li class="features-item">
+                        <picture>
+                            <source srcset="assets/icons/ic.webp" type="image/webp">
+                            <img src="assets/icons/ic.png" alt="Иконка кофейни" class="features-icon" loading="lazy" width="114" height="114">
+                        </picture>
+                        <h3 class="features-name">Источник</h3>
+                        <p class="features-description">Кофейные зерна арабики и робусты соответствуют международным стандартам качества.</p>
                     </li>
-                    <li class="giftset-item">
-                        <button class="giftset-button" data-path="two">
-                            2
-                        </button>
+                    <li class="features-item">
+                        <picture>
+                            <source srcset="assets/icons/IC%20(1).webp" type="image/webp">
+                            <img src="assets/icons/IC%20(1).png" alt="Иконка вывески" class="features-icon" loading="lazy" width="114" height="114">
+                        </picture>
+                        <h3 class="features-name">Качество</h3>
+                        <p class="features-description">Каждое кофейное зерно — это процесс высокой концентрации усилий кофейных мастеров.</p>
                     </li>
-                    <li class="giftset-item">
-                        <button class="giftset-button" data-path="three">
-                            3
-                        </button>
+                    <li class="features-item">
+                        <picture>
+                            <source srcset="assets/icons/IC%20(2).webp" type="image/webp">
+                            <img src="assets/icons/IC%20(2).png" alt="Иконка зёрен" class="features-icon" loading="lazy" width="114" height="114">
+                        </picture>
+                        <h3 class="features-name">Зёрна</h3>
+                        <p class="features-description">Качество чашки кофе на 70% зависит от происхождения и качества зеленых зерен.</p>
+                    </li>
+                    <li class="features-item">
+                        <picture>
+                            <source srcset="assets/icons/IC%20(3).webp" type="image/webp">
+                            <img src="assets/icons/IC%20(3).png" alt="Иконка кофемашины" class="features-icon" loading="lazy" width="114" height="114">
+                        </picture>
+                        <h3 class="features-name">Обжарка</h3>
+                        <p class="features-description">Кофейные зерна подвергаются тщательной и тщательной обжарке.</p>
                     </li>
                 </ul>
-            </div>
-        </section>
-        <section class="combo container">
-            <h3 class="small-header">Выбери свой любимый</h3>
-            <h2 class="big-header">ПРАВИЛЬНЫЙ ВКУС</h2>
-            <div class="swiper">
-                <article class="swiper-slide combo-card">
-                    <img src="assets/img/IMAGE%20(2).png" alt="Кофе REVO Day" class="combo-card-image">
-                    <div class="combo-card-info">
-                        <div class="combo-card-price">299.00</div>
-                        <h3 class="combo-card-name">REVO Day</h3>
-                        <p class="combo-card-description">Комбо из всех трёх дневных наборов: Revo Morning, Revo Afternoon и Revo Evening</p>
-                        <button class="combo-card-buy-button">КУПИТЬ</button>
+            </section>
+            <section class="catalog container">
+                <p class="small-header">Выбери свой любимый</p>
+                <h2 class="big-header">ПРАВИЛЬНЫЙ ВКУС</h2>
+                <div class="swiper">
+                    <div class="swiper-slide">
+                        <article class="swiper-card">
+                            <picture>
+                                <source srcset="assets/img/IMAGE.webp" type="image/webp">
+                                <img src="assets/img/IMAGE.png" alt="Кофе REVO Morning" loading="lazy" width="256" height="256" srcset="assets/img/IMAGE.png 256w, assets/img/IMAGE.png 512w" sizes="(max-width: 600px) 100vw, 256px">
+                            </picture>
+                            <div class="catalog-card-info">
+                                <div class="catalog-card-price">99.00</div>
+                                <h3 class="catalog-card-name">REVO Morning</h3>
+                                <p class="catalog-card-description">горький, сладковатый привкус, цветочный аромат</p>
+                                <button class="catalog-card-buy-button">КУПИТЬ</button>
+                            </div>
+                        </article>
+                        <article class="swiper-card">
+                            <picture>
+                                <source srcset="assets/img/IMAGE.webp" type="image/webp">
+                                <img src="assets/img/IMAGE.png" alt="Кофе REVO Morning" loading="lazy" width="256" height="256" srcset="assets/img/IMAGE.png 256w, assets/img/IMAGE.png 512w" sizes="(max-width: 600px) 100vw, 256px">
+                            </picture>
+                            <div class="catalog-card-info">
+                                <div class="catalog-card-price">99.00</div>
+                                <h3 class="catalog-card-name">REVO Morning</h3>
+                                <p class="catalog-card-description">горький, сладковатый привкус, цветочный аромат</p>
+                                <button class="catalog-card-buy-button">КУПИТЬ</button>
+                            </div>
+                        </article>
                     </div>
-                </article>
-                <article class="swiper-slide combo-card">
-                    <img src="assets/img/IMAGE%20(2).png" alt="Кофе REVO Day" class="combo-card-image">
-                    <div class="combo-card-info">
-                        <div class="combo-card-price">299.00</div>
-                        <h3 class="combo-card-name">REVO Day</h3>
-                        <p class="combo-card-description">Комбо из всех трёх дневных наборов: Revo Morning, Revo Afternoon и Revo Evening</p>
-                        <button class="combo-card-buy-button">КУПИТЬ</button>
+                    <div class="swiper-slide">
+                        <article class="swiper-card">
+                            <picture>
+                                <source srcset="assets/img/IMAGE.webp" type="image/webp">
+                                <img src="assets/img/IMAGE.png" alt="Кофе REVO Morning" loading="lazy" width="256" height="256" srcset="assets/img/IMAGE.png 256w, assets/img/IMAGE.png 512w" sizes="(max-width: 600px) 100vw, 256px">
+                            </picture>
+                            <div class="catalog-card-info">
+                                <div class="catalog-card-price">99.00</div>
+                                <h3 class="catalog-card-name">REVO Morning</h3>
+                                <p class="catalog-card-description">горький, сладковатый привкус, цветочный аромат</p>
+                                <button class="catalog-card-buy-button">КУПИТЬ</button>
+                            </div>
+                        </article>
+                        <article class="swiper-card">
+                            <picture>
+                                <source srcset="assets/img/IMAGE.webp" type="image/webp">
+                                <img src="assets/img/IMAGE.png" alt="Кофе REVO Morning" loading="lazy" width="256" height="256" srcset="assets/img/IMAGE.png 256w, assets/img/IMAGE.png 512w" sizes="(max-width: 600px) 100vw, 256px">
+                            </picture>
+                            <div class="catalog-card-info">
+                                <div class="catalog-card-price">99.00</div>
+                                <h3 class="catalog-card-name">REVO Morning</h3>
+                                <p class="catalog-card-description">горький, сладковатый привкус, цветочный аромат</p>
+                                <button class="catalog-card-buy-button">КУПИТЬ</button>
+                            </div>
+                        </article>
                     </div>
-                </article>
-                <article class="swiper-slide combo-card">
-                    <img src="assets/img/IMAGE%20(2).png" alt="Кофе REVO Day" class="combo-card-image">
-                    <div class="combo-card-info">
-                        <div class="combo-card-price">299.00</div>
-                        <h3 class="combo-card-name">REVO Day</h3>
-                        <p class="combo-card-description">Комбо из всех трёх дневных наборов: Revo Morning, Revo Afternoon и Revo Evening</p>
-                        <button class="combo-card-buy-button">КУПИТЬ</button>
+                    <div class="swiper-slide not-active">
+                        <article class="swiper-card">
+                            <picture>
+                                <source srcset="assets/img/IMAGE.webp" type="image/webp">
+                                <img src="assets/img/IMAGE.png" alt="Кофе REVO Morning" loading="lazy" width="256" height="256" srcset="assets/img/IMAGE.png 256w, assets/img/IMAGE.png 512w" sizes="(max-width: 600px) 100vw, 256px">
+                            </picture>
+                            <div class="catalog-card-info">
+                                <div class="catalog-card-price">99.00</div>
+                                <h3 class="catalog-card-name">REVO Morning</h3>
+                                <p class="catalog-card-description">горький, сладковатый привкус, цветочный аромат</p>
+                                <button class="catalog-card-buy-button">КУПИТЬ</button>
+                            </div>
+                        </article>
+                        <article class="swiper-card">
+                            <picture>
+                                <source srcset="assets/img/IMAGE.webp" type="image/webp">
+                                <img src="assets/img/IMAGE.png" alt="Кофе REVO Morning" loading="lazy" width="256" height="256" srcset="assets/img/IMAGE.png 256w, assets/img/IMAGE.png 512w" sizes="(max-width: 600px) 100vw, 256px">
+                            </picture>
+                            <div class="catalog-card-info">
+                                <div class="catalog-card-price">99.00</div>
+                                <h3 class="catalog-card-name">REVO Morning</h3>
+                                <p class="catalog-card-description">горький, сладковатый привкус, цветочный аромат</p>
+                                <button class="catalog-card-buy-button">КУПИТЬ</button>
+                            </div>
+                        </article>
                     </div>
-                </article>
-                <article class="swiper-slide combo-card not-active">
-                    <img src="assets/img/IMAGE%20(2).png" alt="Кофе REVO Day" class="combo-card-image">
-                    <div class="combo-card-info">
-                        <div class="combo-card-price">299.00</div>
-                        <h3 class="combo-card-name">REVO Day</h3>
-                        <p class="combo-card-description">Комбо из всех трёх дневных наборов: Revo Morning, Revo Afternoon и Revo Evening</p>
-                        <button class="combo-card-buy-button">КУПИТЬ</button>
-                    </div>
-                </article>
-            </div>
-            <div class="swiper-buttons">
-                <div class="swiper-button"><svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.1613 0.255668C15.8344 -0.0852227 15.2902 -0.0852227 14.9518 0.255668C14.6248 0.585042 14.6248 1.13323 14.9518 1.46184L21.0848 7.6401H0.846745C0.374976 7.64086 0 8.01861 0 8.49386C0 8.96911 0.374976 9.35914 0.846745 9.35914H21.0848L14.9518 15.5259C14.6248 15.8668 14.6248 16.4157 14.9518 16.7443C15.2902 17.0852 15.8351 17.0852 16.1613 16.7443L23.7462 9.10347C24.0846 8.77409 24.0846 8.22591 23.7462 7.8973L16.1613 0.255668Z" fill="#F9FBFF" />
-                </svg></div>
-                <div class="swiper-button"><svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.1613 0.255668C15.8344 -0.0852227 15.2902 -0.0852227 14.9518 0.255668C14.6248 0.585042 14.6248 1.13323 14.9518 1.46184L21.0848 7.6401H0.846745C0.374976 7.64086 0 8.01861 0 8.49386C0 8.96911 0.374976 9.35914 0.846745 9.35914H21.0848L14.9518 15.5259C14.6248 15.8668 14.6248 16.4157 14.9518 16.7443C15.2902 17.0852 15.8351 17.0852 16.1613 16.7443L23.7462 9.10347C24.0846 8.77409 24.0846 8.22591 23.7462 7.8973L16.1613 0.255668Z" fill="#F9FBFF" />
-                </svg></div>
-            </div>
-        </section>
-    </main>
+                </div>
+                <div class="swiper-buttons">
+                    <button class="swiper-button" aria-label="Предыдущий слайд"><svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M16.1613 0.255668C15.8344 -0.0852227 15.2902 -0.0852227 14.9518 0.255668C14.6248 0.585042 14.6248 1.13323 14.9518 1.46184L21.0848 7.6401H0.846745C0.374976 7.64086 0 8.01861 0 8.49386C0 8.96911 0.374976 9.35914 0.846745 9.35914H21.0848L14.9518 15.5259C14.6248 15.8668 14.6248 16.4157 14.9518 16.7443C15.2902 17.0852 15.8351 17.0852 16.1613 16.7443L23.7462 9.10347C24.0846 8.77409 24.0846 8.22591 23.7462 7.8973L16.1613 0.255668Z" fill="#F9FBFF" />
+                    </svg></button>
+                    <button class="swiper-button" aria-label="Следующий слайд"><svg width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M16.1613 0.255668C15.8344 -0.0852227 15.2902 -0.0852227 14.9518 0.255668C14.6248 0.585042 14.6248 1.13323 14.9518 1.46184L21.0848 7.6401H0.846745C0.374976 7.64086 0 8.01861 0 8.49386C0 8.96911 0.374976 9.35914 0.846745 9.35914H21.0848L14.9518 15.5259C14.6248 15.8668 14.6248 16.4157 14.9518 16.7443C15.2902 17.0852 15.8351 17.0852 16.1613 16.7443L23.7462 9.10347C24.0846 8.77409 24.0846 8.22591 23.7462 7.8973L16.1613 0.255668Z" fill="#F9FBFF" />
+                    </svg></button>
+                </div>
+            </section>
+            <section class="gifset container">
+                <p class="small-header">Лучший подарок вашим друзьям</p>
+                <h2 class="big-header">ПОДАРОЧНЫЕ НАБОРЫ</h2>
+                <div class="gifset-cards">
+                    <article class="gifset-card">
+                        <picture>
+                            <source srcset="assets/img/pr-0018-r.webp" type="image/webp">
+                            <img src="assets/img/pr-0018-r.png" alt="Подарочный набор 1" class="gifset-card-image" loading="lazy" width="490" height="460">
+                        </picture>
+                        <div class="gifset-card-info">
+                            <div class="giftset-card-price">999.00</div>
+                            <h3 class="giftset-card-name">Подарочный набор «Вьетнамский фильтрованный кофе»</h3>
+                            <p class="giftset-card-description">Отличный подарок для ценителей кофе. Кофе Revo тщательно отобран, обжарен и помолот с использованием технологий и секретов, переданных известными мастерами, а также с любовью и страстью кофеваров, создавая безупречный кофе специально для вас.</p>
+                            <div class="gifset-card-icons">
+                                <div class="gifset-card-icon">
+                                    <img src="assets/icons/IC_coffee.png" alt="" class="gifset-card-icon-image">
+                                    <div class="gifset-card-icon-text">
+                                        <div class="gifset-card-icon-name">Сорт</div>
+                                        <div class="gifset-card-icon-subname">Эрл Грей</div>
+                                    </div>
+                                </div>
+                                <div class="gifset-card-icon">
+                                    <img src="assets/icons/IC_Mountain.png" alt="" class="gifset-card-icon-image">
+                                    <div class="gifset-card-icon-text">
+                                        <div class="gifset-card-icon-name">Высота сбора</div>
+                                        <div class="gifset-card-icon-subname">700 — 800м</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="gifset-card-buy-button">КУПИТЬ</button>
+                        </div>
+                    </article>
+                    <ul class="giftset-list-tabs list-vertical">
+                        <li class="giftset-item">
+                            <button class="giftset-button active" data-path="one">
+                                1
+                            </button>
+                        </li>
+                        <li class="giftset-item">
+                            <button class="giftset-button" data-path="two">
+                                2
+                            </button>
+                        </li>
+                        <li class="giftset-item">
+                            <button class="giftset-button" data-path="three">
+                                3
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="combo container">
+                <p class="small-header">Выбери свой любимый</p>
+                <h2 class="big-header">ПРАВИЛЬНЫЙ ВКУС</h2>
+                <div class="combo-grid">
+                    <article class="combo-card">
+                        <picture>
+                            <source srcset="assets/img/IMAGE%20(2).webp" type="image/webp">
+                            <img src="assets/img/IMAGE%20(2).png" alt="Кофе REVO Day" class="combo-card-image" loading="lazy" width="320" height="320">
+                        </picture>
+                        <div class="combo-card-info">
+                            <div class="combo-card-price">299.00</div>
+                            <h3 class="combo-card-name">REVO Day</h3>
+                            <p class="combo-card-description">Комбо из всех трёх дневных наборов: Revo Morning, Revo Afternoon и Revo Evening</p>
+                            <button class="combo-card-buy-button">КУПИТЬ</button>
+                        </div>
+                    </article>
+                    <article class="combo-card">
+                        <picture>
+                            <source srcset="assets/img/IMAGE%20(2).webp" type="image/webp">
+                            <img src="assets/img/IMAGE%20(2).png" alt="Кофе REVO Day" class="combo-card-image" loading="lazy" width="320" height="320">
+                        </picture>
+                        <div class="combo-card-info">
+                            <div class="combo-card-price">299.00</div>
+                            <h3 class="combo-card-name">REVO Day</h3>
+                            <p class="combo-card-description">Комбо из всех трёх дневных наборов: Revo Morning, Revo Afternoon и Revo Evening</p>
+                            <button class="combo-card-buy-button">КУПИТЬ</button>
+                        </div>
+                    </article>
+                    <article class="combo-card">
+                        <picture>
+                            <source srcset="assets/img/IMAGE%20(2).webp" type="image/webp">
+                            <img src="assets/img/IMAGE%20(2).png" alt="Кофе REVO Day" class="combo-card-image" loading="lazy" width="320" height="320">
+                        </picture>
+                        <div class="combo-card-info">
+                            <div class="combo-card-price">299.00</div>
+                            <h3 class="combo-card-name">REVO Day</h3>
+                            <p class="combo-card-description">Комбо из всех трёх дневных наборов: Revo Morning, Revo Afternoon и Revo Evening</p>
+                            <button class="combo-card-buy-button">КУПИТЬ</button>
+                        </div>
+                    </article>
+                    <article class="combo-card">
+                        <picture>
+                            <source srcset="assets/img/IMAGE%20(2).webp" type="image/webp">
+                            <img src="assets/img/IMAGE%20(2).png" alt="Кофе REVO Day" class="combo-card-image" loading="lazy" width="320" height="320">
+                        </picture>
+                        <div class="combo-card-info">
+                            <div class="combo-card-price">299.00</div>
+                            <h3 class="combo-card-name">REVO Day</h3>
+                            <p class="combo-card-description">Комбо из всех трёх дневных наборов: Revo Morning, Revo Afternoon и Revo Evening</p>
+                            <button class="combo-card-buy-button">КУПИТЬ</button>
+                        </div>
+                    </article>
+                </div>
+            </section>    </main>
     <footer class="footer">
         <p class="footer-description">© Revo Coffee Russia — 2025</p>
     </footer>

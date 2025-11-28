@@ -173,44 +173,59 @@ ul {
 
 
 /* ---- header ---- */
-header {
-    display:flex;
-    min-height: 45rem;
-    align-content: stretch;
-    z-index: -1;
+.main-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 7rem;
+    background-color: var(--light);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+    padding-left: calc(7rem + env(safe-area-inset-left));
+    padding-right: calc(7rem + env(safe-area-inset-right));
 }
 
-.header {
+.main-nav ul {
     display: flex;
-    min-height: 768px;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: var(--primary);
+    font-weight: var(--font-text-weight-semi-bold);
+    transition: 0.4s ease;
+}
+
+.main-nav a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    display: flex;
+    min-height: 700px;
     max-height: var(--max-width);
     padding: 0 8rem;
     margin: 0 auto;
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
-    z-index: -1;
     background: linear-gradient(to right, #f2f2f2 22%, #415167 78%);
 }
 
-.header-left {
+.hero-left {
     display:flex;
     position:relative;
     background-color: var(--light);
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     width: 22%;
-    padding-top: 4rem;
     padding-bottom: 3.5rem;
 }
 
-.header-logo {
-    display: block;
-    width: 13rem;
-    height: auto;
-}
-
-.header-title {
+.hero-title {
     font-family: var(--font-display), sans-serif;
     font-weight: var(--font-display-weight);
     font-size: var(--font-display-large-size);
@@ -220,21 +235,24 @@ header {
     z-index: 20;
 }
 
-.header-title > span {
+.hero-title > span {
     color: var(--white);
     background-color: var(--accent);
 }
 
-.header-hero{
+.hero-image {
     width: 65%;
     min-height: 45rem;
-    background-image: url("../img/Баннер.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.header-right {
+.hero-image picture,
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-right-decorative {
     width: 13%;
     padding-top: 4rem;
     padding-left: 3rem;
@@ -247,7 +265,6 @@ header {
     display: block;
     width: 38px;
     height: 38px;
-    margin-bottom: 118px;
 }
 
 .basket-main {
@@ -315,7 +332,6 @@ header {
 }
 
 /* ---- section ---- */
-
 section {
     display: block;
     margin-top: 4rem;
@@ -432,7 +448,7 @@ section {
     border-radius: 19px;
     background-color: #c7a17a;
     text-align: center;
-    color: #f9fbff;
+    color: var(--light);
     transition: 0.4s ease;
 }
 
@@ -443,16 +459,17 @@ section {
 
 /* -------- swiper -------- */
 .swiper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 2rem;
+    display: flex;
+    overflow-x: hidden;
     padding : 2rem 0;
     z-index: 1;
 }
 
 .swiper-slide {
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
+    margin-right: 3rem;
     .swiper-card:first-child{
         margin-bottom: 3rem;
     }
@@ -495,6 +512,8 @@ section {
     border-radius: 50%;
     background-color: #c7a17a;
     transition: 0.4s ease;
+    border: none;
+    padding: 0;
 }
 
 .swiper-button:hover {
@@ -599,7 +618,7 @@ section {
 
 .gifset-card-buy-button {
     font-family: var(--font-text), sans-serif;
-    font-weight: var(--font-text-weight-regular);
+    font-weight: var(--font-text-weight-semi-bold);
     font-size: var(--font-text-button-size);
     line-height: var(--font-text-button-line-height);
     text-align: center;
@@ -608,7 +627,7 @@ section {
     padding: 0.5rem 1rem;
     border-radius: 1.5rem;
     background-color: var(--accent);
-    color: var(--white);
+    color: var(--light);
 }
 
 .gifset-card-buy-button:hover {
@@ -654,20 +673,20 @@ section {
     margin-bottom: 0;
 }
 
-.combo-card {
-    width: 20rem;
-    flex-shrink: 0;
-    display: flex;
+.combo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    padding: 0 7rem;
 }
 
-.swiper {
-    .combo-card:first-child {
-        padding-left: 7rem;
-    }
+.combo-card {
+    display: flex;
+    flex-direction: column;
 }
 
 .combo-card-image {
-    width: 20rem;
+    width: 100%;
     height: 20rem;
     object-fit: cover;
 }
@@ -716,8 +735,13 @@ section {
     border-radius: 19px;
     background-color: #c7a17a;
     text-align: center;
-    color: #f9fbff;
+    color: var(--light);
     transition: 0.4s ease;
+}
+
+.combo-card-buy-button:hover {
+    color: #415167;
+    background-color: #efd9c3;
 }
 
 /* ------- footer ----------*/
@@ -735,3 +759,206 @@ footer {
     text-align: center;
     color: var(--primary);
 }
+
+@media (max-width: 1024px) {
+    .main-header {
+        padding: 1rem 3rem;
+    }
+    
+    .hero {
+        padding: 0 4rem;
+    }
+
+    .container {
+        padding: 2rem 3rem;
+    }
+    
+    section.container > ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .features-item {
+        width: calc(50% - 4rem);
+        margin-right: 0;
+    }
+
+    .catalog {
+       padding-right: 3rem;
+    }
+
+    .gifset-cards {
+        padding: 0 0 0 4rem;
+    }
+    
+    .gifset-card-image {
+        left: -2rem;
+    }
+    
+    .gifset-card-info {
+        padding-left: 200px;
+    }
+    
+    .combo-grid {
+        padding: 0 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    /* ---- header ---- */
+    .main-header {
+        flex-direction: column;
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    /* ---- hero section ---- */
+    .hero {
+        flex-direction: column;
+        padding: 0 2rem;
+        min-height: auto;
+        background: var(--primary);
+    }
+
+    .hero-left, .hero-image, .hero-right-decorative {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-left {
+        padding: 2rem 0;
+        text-align: center;
+        order: 2;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .hero-image {
+        min-height: 300px;
+        order: 1;
+    }
+
+    .hero-right-decorative {
+        display: none;
+    }
+    
+    .container {
+        padding: 2rem;
+    }
+
+    .big-header {
+        font-size: 40px;
+    }
+
+    /* ------ features ------ */
+    .features-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+    
+    section.container > ul {
+        flex-direction: column;
+    }
+    
+    /* --------- catalog --------- */
+    .catalog {
+        background: var(--primary);
+        padding-right: 2rem;
+    }
+    
+    .swiper-slide {
+        flex-direction: column;
+        margin-right: 1.5rem;
+    }
+    
+    .swiper-card {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .swiper-card > picture,
+    .swiper-card > picture > img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .catalog-card-info {
+        padding: 1.5rem;
+    }
+
+    /* ------ gifset ------- */
+    .gifset-cards {
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+    }
+
+    .giftset-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .gifset-card-image {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .gifset-card-info {
+        padding: 1.5rem;
+        height: auto;
+    }
+    
+    .gifset-card-icons {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+
+    .giftset-list-tabs {
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .giftset-item {
+        height: auto;
+    }
+
+    .giftset-button {
+        padding: 0.5rem 1rem;
+    }
+    
+    /* ------ combo -------- */
+     .combo {
+        background: #f2f2f2;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .combo-grid {
+        padding: 0;
+        grid-template-columns: 1fr;
+    }
+    
+    .combo-card-info {
+        padding: 1.5rem;
+    }
+}
+
