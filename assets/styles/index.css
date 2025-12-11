@@ -461,7 +461,7 @@ section {
 }
 
 .catalog {
-    background: linear-gradient(to right, #415167 22%, #f2f2f2 22%);
+    background: linear-gradient(to right, #415167 17%, #f2f2f2 17%);
     overflow-x: hidden;
 }
 
@@ -786,7 +786,7 @@ section {
 }
 
 .combo {
-    background: linear-gradient(to right, #f2f2f2 77%, #415167 77%);
+    background: linear-gradient(to right, #f2f2f2 83%, #415167 83%);
     overflow-x: hidden;
     margin-bottom: 0;
 }
@@ -794,6 +794,10 @@ section {
 .combo .container {
     padding-left: 0;
     padding-right: 0;
+}
+
+.combo .section__subtitle, .combo .section__title {
+    margin-right: 100px;
 }
 
 .combo__grid {
@@ -826,6 +830,7 @@ section {
     opacity: 0.5;
     cursor: not-allowed;
 }
+
 
 @media (max-width: 1024px) {
     .header {
@@ -868,10 +873,30 @@ section {
         padding: 0 3rem;
         grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     }
+
+    .hero__title {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .section__title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .section__subtitle {
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+    }
+
+    .features__item {
+        width: calc(50% - 1rem);
+    }
 }
 
 @media (max-width: 768px) {
     .header {
+        position: static;
         flex-direction: column;
         padding: 1rem 2rem;
         gap: 1rem;
@@ -942,20 +967,32 @@ section {
         padding-right: 2rem;
     }
 
+    .catalog .section__title, .catalog .section__subtitle {
+        color: #f2f2f2;
+    }
+
     .slider__slide {
         flex-direction: column;
         margin-right: 1.5rem;
+        gap: 1.5rem;
+        height: auto;
+    }
+
+    .catalog .card {
+        height: auto;
     }
 
     .card {
         flex-direction: column;
         height: auto;
+        width: 100%;
     }
 
     .card > picture,
     .card > picture > img {
         width: 100%;
         height: auto;
+        max-height: none;
     }
 
     .card__info {
@@ -1010,7 +1047,7 @@ section {
     }
 
     .combo {
-        background: #f2f2f2;
+        background: var(--primary);
     }
 
     .combo .container {
@@ -1025,6 +1062,11 @@ section {
 
     .card--combo .card__info {
         padding: 1.5rem;
+    }
+
+    .combo .section__subtitle, .combo .section__title {
+        margin-right: 0;
+        color: #f2f2f2;
     }
 }
 
