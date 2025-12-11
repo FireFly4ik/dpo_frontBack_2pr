@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="assets/styles/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/mobile.css" media="screen and (max-width:1024px)">
     <title>Revo Coffee</title>
 </head>
 <body>
@@ -14,7 +16,13 @@
                     <img src="assets/img/revo_logo.png" alt="Лgo Revo Coffee">
                 </a>
             </div>
-            <nav aria-label="Главное меню" class="header__nav nav">
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть
+меню" aria-expanded="false">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+            <nav aria-label="Главное меню" class="header__nav nav" id="mainNav">
                 <ul class="nav__list">
                     <li class="nav__item nav__item--active"><a href="#about" class="nav__link">Главная</a></li>
                     <li class="nav__item"><a href="#features" class="nav__link">Кофе</a></li>
@@ -23,6 +31,7 @@
                     <li class="nav__item"><a href="#combo" class="nav__link">Комбо наборы</a></li>
                 </ul>
             </nav>
+            <button class="btn btn--primary header__cta">Заказать</button>
             <a aria-label="Корзина товаров" class="header__basket basket" href="">
                 <img src="assets/icons/shopping-cart-3.png" alt="Иконка корзины" class="basket__icon">
                 <span aria-hidden="true" class="basket__count">2</span>
@@ -291,9 +300,15 @@
                     </article>
                 </div>
                 </div>
-            </section>    </main>
+            </section>
+        </main>
     <footer class="footer">
         <p class="footer-description">© Revo Coffee Russia — 2025</p>
     </footer>
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        ↑
+    </button>
+
+    <script src="scripts/menu.js"></script>
 </body>
 </html>
